@@ -1,12 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Sarah De Witt</title>
-</head>
-<body>
-    <h1>Welcome!</h1>
-</body>
+  </head>
+  <body class="z-10">
+    <header class="px-10">
+      <nav>
+        <div class="flex flex-wrap items-center justify-between mx-auto py-10">
+          <a href="#" class="flex items-center">
+            <span class="self-center text-c-yellow">{Sarah De Witt}</span>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-c-yellow md:hidden"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0"
+            >
+              <li>
+                <a
+                  href="#Home"
+                  class="block py-3 md:p-1 text-c-white hover:text-c-yellow transition-all"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Projects"
+                  class="block py-3 md:p-1 text-c-white hover:text-c-yellow transition-all"
+                  aria-current="page"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#About"
+                  class="block py-3 md:p-1 text-c-white hover:text-c-yellow transition-all"
+                  aria-current="page"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Contact"
+                  class="block py-3 md:p-1 text-c-white hover:text-c-yellow transition-all"
+                  aria-current="page"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="Home">
+      <div class="px-10 mb-28">
+        <h1 class="leading-relaxed md:max-w-[70vw]">
+          Hello, I'm Sarah De Witt from Kuala Lumpur, Malaysia. I build things
+          for the web.
+        </h1>
+      </div>
+      <div class="bottom-0 bg-c-yellow overflow-hidden">
+        <div class="marquee-container p-5 flex items-center overflow-hidden">
+          <p class="marquee text-3xl py-4 text-c-black">
+            Web Development <span class="text-c-orange px-3">&#10022;</span> Web
+            Design <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span> Web Development
+            <span class="text-c-orange px-3">&#10022;</span> Web Design
+            <span class="text-c-orange px-3">&#10022;</span>
+          </p>
+        </div>
+      </div>
+      <img
+        src="/img/hero_gradient.png"
+        alt=""
+        class="absolute right-0 top-10 -z-10 h-fit"
+      />
+    </section>
+
+    <section id="Projects" class="p-10 bg-c-black">
+      <h1 class="text-c-yellow mb-8 md:mb-0">Featured Projects</h1>
+      <div class="grid grid-flow-row gap-2 md:gap-8 sm:grid-cols-1 md:grid-cols-2">
+        <div
+          class="my-2 md:my-14 p-0 border-4 border-c-black rounded-3xl hover:border-c-yellow hover:p-4 transition-all ease-in-out duration-300"
+        >
+          <a href="https://sarahejdewitt.medium.com/pickup-cba2ac85e0b3" target="_blank">
+            <img
+              src="/img/pickup.png"
+              alt=""
+              class="rounded-3xl w-full object-cover"
+            />
+            <div class="mt-4">
+              <p class="text-c-white">Pickup - Mobile App</p>
+              <p class="text-c-yellow">UI/UX Design</p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="my-2 md:my-14 p-0 border-4 border-c-black rounded-3xl hover:border-c-yellow hover:p-4 transition-all ease-in-out duration-300"
+        >
+          <a href="https://sarahejdewitt.medium.com/closecall-3128e04fbf21" target="_blank">
+            <img
+              src="/img/closecall.png"
+              alt=""
+              class="rounded-3xl w-full object-cover"
+            />
+            <div class="mt-4">
+              <p class="text-c-white">Closecall - A Women’s Safety App</p>
+              <p class="text-c-yellow">UI/UX Design, Mobile App Development</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="About" class="p-10 bg-c-black">
+      <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-8">
+        <h1 class="text-c-yellow">About Me</h1>
+        <img
+          src="/img/sarah.png"
+          alt=""
+          class="md:row-span-2 rounded-3xl w-full object-cover"
+        />
+        <h2 class="text-c-white md:self-end">
+          Hello! I’m Sarah and I am currently completing my penultimate year in
+          Information Technology at Sunway University. Aspiring to be a web
+          developer, I am constantly searching for opportunities that will allow
+          me to extend my knowledge in the web development industry while
+          improving my own capabilities and to eventually empower those around
+          me. I interned as a Front-End Developer @ Studio20.
+        </h2>
+      </div>
+    </section>
+
+    <section id="Contact" class="p-10 bg-c-yellow">
+      <h1 class="text-c-black mb-20">Let's get in touch and work together.</h1>
+      <div class="flex flex-wrap items-center justify-between">
+        <a
+          href="mailto:sarahejdewitt@gmail.com"
+          class="border-4 border-c-blue text-c-blue bg-c-yellow rounded-3xl px-10 py-2 font-bold hover:bg-c-blue hover:text-c-yellow transition-all"
+          >Contact Me</a
+        >
+        <div class="flex flex-wrap gap-8 items-center justify-center">
+          <a href="https://www.behance.net/sarahejdewitt" target="_blank"
+            ><img
+              src="/img/behance.svg"
+              alt=""
+              class="hover:scale-110 transition ease-in-out duration-300"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/sarah-de-witt-926b741a3/"
+            target="_blank"
+            ><img
+              src="/img/linkedin.svg"
+              alt=""
+              class="hover:scale-110 transition ease-in-out duration-300"
+          /></a>
+          <a href="https://dribbble.com/sarahdewitt" target="_blank"
+            ><img
+              src="/img/dribbble.svg"
+              alt=""
+              class="hover:scale-110 transition ease-in-out duration-300"
+          /></a>
+          <a href="https://sarahejdewitt.medium.com/" target="_blank"
+            ><img
+              src="/img/medium.svg"
+              alt=""
+              class="hover:scale-110 transition ease-in-out duration-300"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
 </html>

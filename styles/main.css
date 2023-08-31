@@ -1,9 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Inter:wght@400;700&family=Open+Sans:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-*{
-    font-family: "Inter", sans-serif;
+* {
+  font-family: "Inter", sans-serif;
 }
 
-html{
-    background: #040F0F;
+html {
+  background: #040f0f;
+}
+
+.marquee{
+    white-space: nowrap;
+    animation: marquee 17s infinite linear; /* notice the infinite */
+}
+
+@keyframes marquee{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%)
+    }
 }
