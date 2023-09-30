@@ -11,7 +11,8 @@
     <title>Sarah De Witt</title>
   </head>
   <body class="z-10">
-    <header class="px-10">
+    <div class="h-screen">
+    <header class="px-20">
       <nav>
         <div class="flex flex-wrap items-center justify-between mx-auto py-10">
           <a href="#" class="flex items-center">
@@ -45,38 +46,36 @@
             <ul
               class="font-medium flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0"
             >
-              <li>
+              <li id="hoverable">
+                
                 <a
                   href="#Home"
-                  class="block py-3 md:p-1 text-c-white hover:text-c-yellow transition-all"
-                  aria-current="page"
+                  class="block py-3 md:p-1 text-c-white hover:text-c"
                   >Home</a
-                >
+                > 
               </li>
-              <li>
+              <li id="hoverable">
                 <a
                   href="#Projects"
-                  class="block py-3 md:p-1 text-c-white hover:text-c-yellow transition-all"
-                  aria-current="page"
+                  class="block py-3 md:p-1 text-c-white transition-all"
                   >Projects</a
                 >
               </li>
-              <li>
+              <li id="hoverable">
                 <a
                   href="#About"
-                  class="block py-3 md:p-1 text-c-white hover:text-c-yellow transition-all"
-                  aria-current="page"
+                  class="block py-3 md:p-1 text-c-white transition-all"
                   >About</a
                 >
               </li>
-              <li>
+              <li id="hoverable">
                 <a
                   href="#Contact"
-                  class="block py-3 md:p-1 text-c-white hover:text-c-yellow transition-all"
-                  aria-current="page"
+                  class="block py-3 md:p-1 text-c-white transition-all"
                   >Contact</a
                 >
               </li>
+              <!-- <div class="cursor-small-dot" data-cursor-small-dot></div> -->
             </ul>
           </div>
         </div>
@@ -84,52 +83,57 @@
     </header>
 
     <section id="Home">
-      <div class="px-10 mb-28">
-        <h1 class="leading-relaxed md:max-w-[70vw]">
-          Hello, I'm Sarah De Witt from Kuala Lumpur, Malaysia. I build things
+      <div class="px-20 py-10 flex flex-wrap items-center justify-center">
+        <h1 class="leading-tight text-justify cursor-default" style="font-size: 6vw;">
+          Hello, I'm <span class="">Sarah De Witt</span> from Kuala Lumpur, Malaysia. I build things
           for the web.
         </h1>
+        <!-- <h1 class="text-center basis-full">Sarah De Witt</h1>
+        <p class="basis-full text-c-white text-right">Kuala Lumpur, Malaysia</p> -->
       </div>
-      <div class="bottom-0 bg-c-yellow overflow-hidden">
-        <div class="marquee-container p-5 flex items-center overflow-hidden">
-          <p class="marquee text-3xl py-4 text-c-black">
-            Web Development <span class="text-c-orange px-3">&#10022;</span> Web
-            Design <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span> Web Development
-            <span class="text-c-orange px-3">&#10022;</span> Web Design
-            <span class="text-c-orange px-3">&#10022;</span>
-          </p>
-        </div>
-      </div>
-      <img
+      
+      <!-- <img
         src="/img/hero_gradient.png"
         alt=""
         class="absolute right-0 top-10 -z-10 h-fit"
-      />
+      /> -->
     </section>
+  </div>
+  <div class="bottom-0 bg-c-yellow overflow-hidden my-10">
+    <div class="marquee-container p-5 flex items-center overflow-hidden">
+      <p class="marquee text-3xl py-4 text-c-black">
+        Web Development <span class="text-c-orange px-3">&#10022;</span> Web
+        Design <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span> Web Development
+        <span class="text-c-orange px-3">&#10022;</span> Web Design
+        <span class="text-c-orange px-3">&#10022;</span>
+      </p>
+    </div>
+  </div>
 
-    <section id="Projects" class="p-10 bg-c-black">
+    <section id="Projects" class="py-10 px-20">
       <h1 class="text-c-yellow mb-8 md:mb-0">Featured Projects</h1>
       <div class="grid grid-flow-row gap-2 md:gap-8 sm:grid-cols-1 md:grid-cols-2">
         <div
-          class="my-2 md:my-14 p-0 border-4 border-c-black rounded-3xl hover:border-c-yellow hover:p-4 transition-all ease-in-out duration-300"
+          class="my-2 md:my-14 p-0 border-4 border-transparent rounded-3xl hover:border-c-yellow hover:p-4 transition-all ease-in-out duration-300"
+          id="project"
         >
           <a href="https://sarahejdewitt.medium.com/pickup-cba2ac85e0b3" target="_blank">
             <img
@@ -144,7 +148,7 @@
           </a>
         </div>
         <div
-          class="my-2 md:my-14 p-0 border-4 border-c-black rounded-3xl hover:border-c-yellow hover:p-4 transition-all ease-in-out duration-300"
+          class="my-2 md:my-14 p-0 border-4 border-transparent rounded-3xl hover:border-c-yellow hover:p-4 transition-all ease-in-out duration-300"
         >
           <a href="https://sarahejdewitt.medium.com/closecall-3128e04fbf21" target="_blank">
             <img
@@ -161,7 +165,7 @@
       </div>
     </section>
 
-    <section id="About" class="p-10 bg-c-black">
+    <!-- <section id="About" class="py-10 px-20">
       <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-8">
         <h1 class="text-c-yellow">About Me</h1>
         <img
@@ -169,18 +173,32 @@
           alt=""
           class="md:row-span-2 rounded-3xl w-full object-cover"
         />
-        <h2 class="text-c-white md:self-end">
+        <p class="text-c-white md:self-end">
           Hello! I’m Sarah and I am currently completing my penultimate year in
           Information Technology at Sunway University. Aspiring to be a web
           developer, I am constantly searching for opportunities that will allow
           me to extend my knowledge in the web development industry while
           improving my own capabilities and to eventually empower those around
           me. I interned as a Front-End Developer @ Studio20.
-        </h2>
+        </p>
+      </div>
+    </section> -->
+
+    <section id="About" class="py-10 px-20">
+      <h1 class="text-c-yellow mb-10">About Me</h1>
+      <p class="text-c-white md:w-3/4">
+        Hello! I’m Sarah and I am currently completing my penultimate year in
+        Information Technology at Sunway University. Aspiring to be a web
+        developer, I am constantly searching for opportunities that will allow
+        me to extend my knowledge in the web development industry while
+        improving my own capabilities and to eventually empower those around
+        me. I interned as a Front-End Developer @ Studio20.
+      </p>
+      <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-8">
       </div>
     </section>
 
-    <section id="Contact" class="p-10 bg-c-yellow">
+    <section id="Contact" class="py-10 px-20 bg-c-yellow">
       <h1 class="text-c-black mb-20">Let's get in touch and work together.</h1>
       <div class="flex flex-wrap items-center justify-between">
         <a
@@ -218,6 +236,10 @@
         </div>
       </div>
     </section>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <!-- <div class="cursor-outline" data-cursor-outline></div> -->
+    <div class="bg"></div>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

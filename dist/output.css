@@ -1,26 +1,196 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap");
 
-* {
-  font-family: "Inter", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=IBM+Plex+Mono:wght@500&display=swap');
+
+p, a {
+  font-family: "IBM Plex Mono", sans-serif;
+}
+
+h1{
+  font-family: "Bayon", sans-serif;
+  font-size: 10rem;
 }
 
 html {
-  background: #040f0f;
+  background: #111111;
 }
 
-.marquee{
+/* a{
+  pointer-events: none;
+} */
+
+.marquee {
   white-space: nowrap;
   animation: marquee 17s infinite linear;
   /* notice the infinite */
 }
 
-@keyframes marquee{
+@keyframes marquee {
   0% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+  }
+}
+
+.highlight-animate {
+  animation: highlight 3.5s infinite ease-in-out;
+  background-image: linear-gradient(to right, #040f0f 50%, #1e26dd 50%);
+  background-size: 200%;
+}
+
+@keyframes highlight {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: -100%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
+
+.cursor-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 20%;
+  transition: transform 0.2s;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  background: white;
+  /* filter: blur(90px);
+  opacity: .6; */
+}
+
+.cursor-dot::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-image: url("http://mirkozeppieri.emanuelepapale.com/wp-content/uploads/2018/07/project-hover-cursor.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.cursor-outline {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+  mix-blend-mode: difference;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.cursor-read-more {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.sticker {
+  width: 100px;
+  height: 100px;
+  background: #000ac7;
+  border-radius: 50%;
+  z-index: 30;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.grow {
+  transform: scale(4);
+  transform-origin: center;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent
+    url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 0.9;
+  visibility: visible;
+  z-index: -999;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(-5%, -5%);
+  }
+
+  20% {
+    transform: translate(-10%, 5%);
+  }
+
+  30% {
+    transform: translate(5%, -10%);
+  }
+
+  40% {
+    transform: translate(-5%, 15%);
+  }
+
+  50% {
+    transform: translate(-10%, 5%);
+  }
+
+  60% {
+    transform: translate(15%, 0);
+  }
+
+  70% {
+    transform: translate(0, 10%);
+  }
+
+  80% {
+    transform: translate(-15%, 0);
+  }
+
+  90% {
+    transform: translate(10%, 5%);
+  }
+
+  100% {
+    transform: translate(5%, 0);
   }
 }
 
@@ -934,46 +1104,32 @@ h1{
 }
 
 h2{
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 @media (min-width: 768px){
+  h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1536px){
   h2{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 }
 
-@media (min-width: 1536px){
-  h2{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-}
-
 p{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 a{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-@media (min-width: 1024px){
-  a{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width: 1280px){
-  a{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 *, ::before, ::after{
@@ -1278,6 +1434,11 @@ a{
   margin-right: auto;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1287,16 +1448,16 @@ a{
   margin-bottom: 0.25rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
 
 .mb-20{
   margin-bottom: 5rem;
-}
-
-.mb-28{
-  margin-bottom: 7rem;
 }
 
 .mb-5{
@@ -1439,6 +1600,10 @@ a{
   height: fit-content;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1481,6 +1646,10 @@ a{
 
 .grow{
   flex-grow: 1;
+}
+
+.basis-full{
+  flex-basis: 100%;
 }
 
 .table-auto{
@@ -2501,11 +2670,6 @@ a{
   border-color: rgb(26 86 219 / var(--tw-border-opacity));
 }
 
-.border-c-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(4 15 15 / var(--tw-border-opacity));
-}
-
 .border-c-blue{
   --tw-border-opacity: 1;
   border-color: rgb(30 38 221 / var(--tw-border-opacity));
@@ -2521,6 +2685,10 @@ a{
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-transparent{
+  border-color: transparent;
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2529,11 +2697,6 @@ a{
 .bg-blue-700{
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
-}
-
-.bg-c-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(4 15 15 / var(--tw-bg-opacity));
 }
 
 .bg-c-yellow{
@@ -2692,10 +2855,6 @@ a{
   padding: 0.25rem;
 }
 
-.p-10{
-  padding: 2.5rem;
-}
-
 .p-2{
   padding: 0.5rem;
 }
@@ -2720,6 +2879,11 @@ a{
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-3{
@@ -2920,8 +3084,8 @@ a{
   line-height: 2.25rem;
 }
 
-.leading-relaxed{
-  line-height: 1.625;
+.leading-tight{
+  line-height: 1.25;
 }
 
 .text-\[\#336699\]\/\[\.35\]{
@@ -3604,12 +3768,12 @@ a{
     display: none;
   }
 
-  .md\:w-auto{
-    width: auto;
+  .md\:w-3\/4{
+    width: 75%;
   }
 
-  .md\:max-w-\[70vw\]{
-    max-width: 70vw;
+  .md\:w-auto{
+    width: auto;
   }
 
   .md\:grid-cols-2{
