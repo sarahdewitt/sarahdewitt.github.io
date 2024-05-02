@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  @apply m-35px lg:m-50px bg-black text-light-pink;
+  @apply bg-black text-light-pink p-0 m-0;
 }
 
 @layer utilities {
