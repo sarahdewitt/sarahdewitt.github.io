@@ -1,6 +1,7 @@
 import Image from "next/image";
 import DefaultSection from "../atoms/DefaultSection";
-import Heading from "../atoms/Heading";
+import Heading from "../atoms/Text/Heading";
+import Paragraph from "../atoms/Text/Paragraph";
 
 export default function About() {
   return (
@@ -12,20 +13,15 @@ export default function About() {
           alt={"Profile photo"}
           width={168}
           height={224}
-          className="rounded-2xl"
         />
-        <p className="text-xs lg:text-base">
-          Hello, I'm Sarah and I'm a self-motivated and results-driven IT fresh
+        <Paragraph text="Hello, I'm Sarah and I'm a self-motivated and results-driven IT fresh
           graduate, seeking to utilise my attention to detail and enhance my
           programming and development skills, particularly to bring web-based
-          applications to life.
-        </p>
-        <p className="text-xs lg:text-base">
-          Aspiring to be a web developer, I am constantly searching for
+          applications to life."/>
+        <Paragraph text="Aspiring to be a web developer, I am constantly searching for
           opportunities that will allow me to extend my knowledge in the web
           development industry while improving my own capabilities and to
-          eventually empower those around me.
-        </p>
+          eventually empower those around me."/>
       </div>
     </DefaultSection>
   );

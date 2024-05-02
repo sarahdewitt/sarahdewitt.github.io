@@ -1,7 +1,7 @@
-import AnchorButton from "../atoms/AnchorButton";
+import AnchorButton from "../atoms/AnchorButton/AnchorButton";
 import DefaultSection from "../atoms/DefaultSection";
-import Heading from "../atoms/Heading";
-import Job from "../molecules/Job";
+import Heading from "../atoms/Text/Heading";
+import Job from "../molecules/Position";
 
 export default function Experience() {
   return (
@@ -35,13 +35,13 @@ export default function Experience() {
         }
       />
       <span className="md:float-right">
-          <AnchorButton
-            link={"/"}
-            text={"View My Resume"}
-            src={"/point-right.png"}
-            alt={"Point Right"}
-          />
-        </span>
+        <AnchorButton
+          link={"/"}
+          text={"View My Resume"}
+          src={"/point-right.png"}
+          alt={"Point Right"}
+        />
+      </span>
     </DefaultSection>
   );
 }

@@ -8,7 +8,7 @@ export default function Picture({ src, alt }: { src: string; alt: string }) {
       width={'900'}
       height={'900'}
       layout="intrinsic"
-      className="object-cover w-full rounded-2xl"
+      className="object-cover w-full"
     />
   );
 }

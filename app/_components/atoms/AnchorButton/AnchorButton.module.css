@@ -1,0 +1,27 @@
+.gradient{
+  @apply text-pink font-medium uppercase text-xs lg:text-base inline-flex items-center border border-pink px-5 py-3 aspect-[1/0.2] relative hover:text-black hover:delay-150;
+}
+
+.gradient:before {
+  background: linear-gradient(
+    130deg,
+    transparent 0 33%,
+    #ff78b9 66%,
+    #ffa3cf 83.5%,
+    #e4af70 100%
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: background-position 350ms ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.gradient:hover::before {
+  background-position: 100% 100%;
+}

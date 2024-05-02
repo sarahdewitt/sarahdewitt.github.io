@@ -1,0 +1,24 @@
+.anchorAnimate {
+  @apply text-pink uppercase text-xs lg:text-base font-normal ml-5 relative;
+}
+
+.anchorAnimate:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 1px;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  background: #ff78b9;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  transition: width 200ms ease;
+}
+
+
+.anchorAnimate:hover::before{
+    opacity: 1;
+    width: 100%;
+}

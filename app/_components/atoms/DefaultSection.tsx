@@ -10,7 +10,7 @@ export default function DefaultSection({
 }>) {
   return (
     <motion.div
-      className="py-8 px-12 lg:py-28"
+      className="py-8 px-7 lg:py-28"
       id={`${id}`}
       initial={{ opacity: 0, y:100 }}
       whileInView={{opacity: 1, y:0}}

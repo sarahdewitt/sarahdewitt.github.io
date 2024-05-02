@@ -1,5 +1,5 @@
 import DefaultSection from "../atoms/DefaultSection";
-import Heading from "../atoms/Heading";
+import Heading from "../atoms/Text/Heading";
 import Project from "../molecules/Project";
 
 export default function OtherProjects() {
