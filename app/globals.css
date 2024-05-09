@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
   --background: #1E1E1E;
@@ -20,11 +20,11 @@
 } */
 
 html {
-  @apply font-archivo;
+  @apply font-inter;
 }
 
 body {
-  @apply bg-black text-light-pink p-0 m-0;
+  @apply bg-white text-black p-0 m-0;
 }
 
 @layer utilities {

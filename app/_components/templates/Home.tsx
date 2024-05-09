@@ -25,7 +25,7 @@ export default function Home() {
     
       return (
         <>
-          <ProgressBar />
+          {/* <ProgressBar /> */}
           <Header />
           <Hero />
           <About />

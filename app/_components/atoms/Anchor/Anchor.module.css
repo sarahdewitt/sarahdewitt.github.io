@@ -1,8 +1,30 @@
-.anchorAnimate {
-  @apply text-pink uppercase text-xs lg:text-base font-normal ml-5 relative;
+.link {
+  @apply cursor-pointer;
 }
 
-.anchorAnimate:before {
+.el {
+  @apply flex flex-col relative z-10 p-2 cursor-pointer;
+}
+
+.el:hover .indicator {
+  @apply scale-100
+}
+
+.el .indicator {
+  @apply absolute w-1 h-1 top-10 left-1/2 bg-black rounded-full scale-0 -translate-x-1/2 transition-transform;
+
+  /* position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 40px;
+  left: 50%;
+  background-color: black;
+  border-radius: 50%;
+  transform: scale(0) translateX(-50%);
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1); */
+}
+
+/* .anchorAnimate:before {
   content: "";
   display: block;
   position: absolute;
@@ -21,4 +43,4 @@
 .anchorAnimate:hover::before{
     opacity: 1;
     width: 100%;
-}
+} */

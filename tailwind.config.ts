@@ -18,10 +18,11 @@ const config: Config = {
       'light-pink': '#E5CBD7',
       'pink': '#FFA3CF',
       'yellow': '#E4AF70',
-      'transparent': 'transparent'
+      'transparent': 'transparent',
+      'white': '#FFFFFF'
     },
     fontFamily: {
-      archivo: ["Archivo", "sans-serif"]
+      inter: ["Inter", "sans-serif"]
     }
   },
   plugins: [],

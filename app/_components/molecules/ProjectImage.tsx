@@ -20,8 +20,8 @@ export default function ProjectImage({
     <div>
       
       <Link href={"#"}>
-        <p className="text-light-pink uppercase text-xs lg:text-base pb-2">
-          <span className="font-bold">{name}</span> / {desc}
+        <p className="text-black text-base lg:text-xl pb-2">
+          <span>{name}</span> / {desc}
         </p>
         <Picture src={`${src}`} alt={`${alt}`} />
       </Link>

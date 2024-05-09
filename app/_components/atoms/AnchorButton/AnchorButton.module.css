@@ -1,8 +1,8 @@
 .gradient{
-  @apply text-pink font-medium uppercase text-xs lg:text-base inline-flex items-center border border-pink px-5 py-3 aspect-[1/0.2] relative hover:text-black hover:delay-150;
+  @apply text-black font-medium uppercase text-xs lg:text-base inline-flex items-center border border-black px-8 py-5 rounded-full;
 }
 
-.gradient:before {
+/* .gradient:before {
   background: linear-gradient(
     130deg,
     transparent 0 33%,
@@ -24,4 +24,4 @@
 
 .gradient:hover::before {
   background-position: 100% 100%;
-}
+} */
