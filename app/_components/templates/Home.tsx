@@ -9,6 +9,7 @@ import Projects from '../organisms/Projects';
 import Lenis from 'lenis';
 import Footer from '../organisms/Footer';
 import OtherProjects from '../organisms/OtherProjects';
+import Test from '../molecules/Test';
 
 export default function Home() {
     useEffect(() => {

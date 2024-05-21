@@ -1,0 +1,32 @@
+.button {
+  @apply w-12 h-12 rounded-full cursor-pointer flex items-center;
+}
+
+.burger {
+  @apply w-full;
+}
+
+.burger::after,
+.burger::before {
+  @apply content-[""] block h-[2px] w-[40%] m-auto bg-black relative transition-all duration-100 delay-200;
+}
+
+.burger::after {
+  @apply -top-[5px];
+}
+
+.burger::before {
+  @apply top-[5px];
+}
+
+.burgerActive::after, .burgerActive::before{
+  @apply bg-white delay-200;
+}
+
+.burgerActive::after {
+  @apply rotate-45 -top-[2px];
+}
+
+.burgerActive::before {
+  @apply -rotate-45 top-0;
+}

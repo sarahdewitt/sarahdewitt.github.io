@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.0.1",
-    "framer-motion": "^11.1.7",
+    "@material-tailwind/react": "^2.1.9",
+    "classnames": "^2.5.1",
+    "framer-motion": "^11.1.9",
     "lenis": "^1.0.45",
     "next": "14.2.2",
     "react": "^18",

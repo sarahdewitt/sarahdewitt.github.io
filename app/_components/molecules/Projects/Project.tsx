@@ -6,23 +6,17 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import { Less, More } from "../atoms/Icons";
+import Badge from "../../atoms/Badge";
+import { Less, More } from "../../atoms/Icons";
 
-interface PositionProps {
-  position: string;
-  company: string;
-  from: string;
-  to: string;
+
+interface ProjectProps {
+  name: string;
   desc: string;
+  badges?: string[]; //make badges optional
 }
 
-export default function Test({
-  position,
-  company,
-  from,
-  to,
-  desc,
-}: PositionProps) {
+export default function Project({ name, desc, badges = [] }: ProjectProps) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Disclosure as={"div"} className={"w-full md:w-3/4 pb-5"}>
@@ -32,7 +26,7 @@ export default function Test({
       >
         <div className="flex justify-between items-center w-full">
           <span className="text-lg md:text-xl lg:text-4xl text-left font-medium pb-3">
-            {position} / {company}
+            {name}
           </span>
           <AnimatePresence initial={false} mode="wait">
             <motion.div
@@ -81,10 +75,12 @@ export default function Test({
               }}
               className={"font-medium text-base lg:text-xl"}
             >
-              <p className="pb-3">
-                {from} — {to}
-              </p>
-              <p>{desc}</p>
+              <p className="pb-3">{desc}</p>
+              <span className="flex flex-wrap pb-4">
+                {badges.map((badge, index) => (
+                  <Badge key={index} text={badge} />
+                ))}
+              </span>
             </DisclosurePanel>
           )}
         </AnimatePresence>

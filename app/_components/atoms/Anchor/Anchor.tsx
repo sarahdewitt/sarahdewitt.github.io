@@ -7,7 +7,6 @@ export default function Anchor({ link, text }: { link: string; text: string }) {
       <Link href={`${link}`} className={styles.link}>
         {text}
       </Link>
-      <div className={styles.indicator}></div>
     </div>
   );
 }

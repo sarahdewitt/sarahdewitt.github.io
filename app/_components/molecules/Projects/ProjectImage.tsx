@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Picture from "../atoms/Picture";
-import { useState } from "react";
-import { motion } from "framer-motion";
+import Picture from "../../atoms/Picture";
 
 interface ProjectImageProps {
   name: string;
