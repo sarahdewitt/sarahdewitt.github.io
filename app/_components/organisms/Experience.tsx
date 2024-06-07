@@ -37,26 +37,23 @@ const positions = [
 export default function Experience() {
   return (
     <DefaultSection id="Experience">
-      <Heading text={"Where I've Worked"} />
-      {positions.map((position, index) => {
-        return (
-          <Position
-            key={index}
-            position={position.position}
-            company={position.company}
-            from={position.from}
-            to={position.to}
-            desc={position.desc}
-          />
-        );
-      })}
-      <span className="md:float-right">
-        <AnchorButton
-          link={"/"}
-          text={"View My Resume"}
-          src={"/point-right.png"}
-          alt={"Point Right"}
-        />
+      <Heading text={"Experience"} />
+      <div className="pb-8">
+        {positions.map((position, index) => {
+          return (
+            <Position
+              key={index}
+              position={position.position}
+              company={position.company}
+              from={position.from}
+              to={position.to}
+              desc={position.desc}
+            />
+          );
+        })}
+      </div>
+      <span className="w-full">
+        <AnchorButton link={"/"} text={"View My Resume"} />
       </span>
     </DefaultSection>
   );

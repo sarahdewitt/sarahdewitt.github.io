@@ -1,9 +1,9 @@
 .link {
-  @apply cursor-pointer hover:text-gray-500 transition-all ease-in;
+  @apply ;
 }
 
 .el {
-  @apply flex flex-col relative z-10 p-2 cursor-pointer text-base lg:text-xl;
+  @apply ;
 }
 
 /* .anchorAnimate:before {

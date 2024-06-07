@@ -24,7 +24,9 @@ const config: Config = withMT({
       'white': '#FFFFFF'
     },
     fontFamily: {
-      inter: ["Inter", "sans-serif"]
+      inter: ["Inter", "sans-serif"],
+      mondwest: ["PP Mondwest", "sans-serif"],
+      montreal: ["PP Neue Montreal", "sans-serif"]
     }
   },
   plugins: [],

@@ -25,16 +25,21 @@ export default function Test({
 }: PositionProps) {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Disclosure as={"div"} className={"w-full md:w-3/4 pb-5"}>
+    <Disclosure as={"div"} className={"group w-full"}>
       <DisclosureButton
-        className={"flex flex-col text-left w-full py-5 border-b border-black"}
+        className={
+          "flex w-full flex-col border-b border-gray-500 text-left transition-all duration-300 ease-in-out group-hover:bg-black"
+        }
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        <div className="flex justify-between items-center w-full">
-          <span className="text-lg md:text-xl lg:text-4xl text-left font-medium pb-3">
+        <div className="flex w-full items-center justify-between">
+          <span className="py-4 text-left text-lg font-medium transition-all duration-300 ease-in-out group-hover:px-4 group-hover:text-white md:text-xl lg:text-2xl">
             {position} / {company}
           </span>
-          <AnimatePresence initial={false} mode="wait">
+          <span className="transition-all duration-300 ease-in-out group-hover:pr-4 group-hover:text-white hidden md:block">
+            {from} — {to}
+          </span>
+          {/* <AnimatePresence initial={false} mode="wait">
             <motion.div
               key={isOpen ? "less" : "more"}
               initial={{ rotate: isOpen ? -90 : 90 }}
@@ -55,40 +60,42 @@ export default function Test({
             >
               {isOpen ? <Less /> : <More />}
             </motion.div>
-          </AnimatePresence>
+          </AnimatePresence> */}
         </div>
-        <AnimatePresence mode="wait">
-          {isOpen && (
-            <DisclosurePanel
-              static
-              as={motion.div}
-              initial={{ height: 0, opacity: 0 }}
-              animate={{
-                height: "auto",
-                opacity: 1,
-                transition: {
-                  height: { duration: 0.5 },
-                  opacity: { duration: 0.2, delay: 0.2 },
-                },
-              }}
-              exit={{
-                height: 0,
-                opacity: 0,
-                transition: {
-                  height: { duration: 0.5 },
-                  opacity: { duration: 0.2 },
-                },
-              }}
-              className={"font-medium text-base lg:text-xl"}
-            >
-              <p className="pb-3">
+      </DisclosureButton>
+      <AnimatePresence mode="wait">
+        {isOpen && (
+          <DisclosurePanel
+            static
+            as={motion.div}
+            initial={{ height: 0, opacity: 0 }}
+            animate={{
+              height: "auto",
+              opacity: 1,
+              transition: {
+                height: { duration: 0.5 },
+                opacity: { duration: 0.2, delay: 0.2 },
+              },
+            }}
+            exit={{
+              height: 0,
+              opacity: 0,
+              transition: {
+                height: { duration: 0.5 },
+                opacity: { duration: 0.2 },
+              },
+            }}
+            className={"text-base font-medium lg:text-xl"}
+          >
+            <div className="py-5">
+              <p className="block md:hidden pb-3">
                 {from} — {to}
               </p>
               <p>{desc}</p>
-            </DisclosurePanel>
-          )}
-        </AnimatePresence>
-      </DisclosureButton>
+            </div>
+          </DisclosurePanel>
+        )}
+      </AnimatePresence>
     </Disclosure>
   );
 }

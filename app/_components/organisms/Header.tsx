@@ -46,7 +46,7 @@ export default function Header() {
   return (
     <>
       <motion.div
-        className="flex justify-between px-7 py-8 lg:py-10 sticky top-0 items-center z-10 bg-white z-50"
+        className="flex justify-between px-7 py-8 lg:py-10 sticky bottom-0 items-center z-10 bg-white"
         variants={{
           visible: { y: 0 },
           hidden: { y: "-100%" },
