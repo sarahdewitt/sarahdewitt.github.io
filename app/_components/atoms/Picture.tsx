@@ -9,7 +9,7 @@ export default function Picture({ src, alt }: { src: string; alt: string }) {
       width={'900'}
       height={'900'}
       layout="intrinsic"
-      className="object-cover w-full hover:scale-110 transition-all ease-in duration-200 grayscale hover:grayscale-0"
+      className="object-cover w-full hover:scale-110 transition-all ease-in duration-200"
     />
     </div>
   );

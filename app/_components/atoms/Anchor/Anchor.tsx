@@ -3,10 +3,10 @@ import styles from "./Anchor.module.css";
 
 export default function Anchor({ link, text }: { link: string; text: string }) {
   return (
-    <div className={"relative z-10 flex cursor-pointer flex-col p-2 text-xs"}>
+    <div className={"relative z-10 flex cursor-pointer flex-col text-sm"}>
       <Link
         href={`${link}`}
-        className={"cursor-pointer transition-all ease-in hover:text-gray-500"}
+        className={"hover:text-gray cursor-pointer transition-all ease-in"}
       >
         {text}
       </Link>

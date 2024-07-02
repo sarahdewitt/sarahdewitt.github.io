@@ -1,22 +1,42 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 
-export default function DefaultSection({
+export const DefaultSection =({
   children,
   id,
 }: Readonly<{
   children: React.ReactNode;
   id: string;
-}>) {
+}>) => {
+  const isDesktop = typeof window !== "undefined" && window.innerWidth > 1024;
+
+  const initial = isDesktop ? { opacity: 0, y: 50 } : {};
+  const whileInView = isDesktop ? { opacity: 1, y: 0} : {};
+
   return (
-    <motion.div
-      className="py-20 px-7 lg:py-28 bg-white"
+    <motion.section
+      className="bg-white px-7 py-20 lg:py-28"
       id={`${id}`}
-      initial={{ opacity: 0, y:100 }}
-      whileInView={{opacity: 1, y:0}}
-      transition={{duration: 0.5, delay: 0.25, ease: "easeInOut"}}
+      initial={initial}
+      whileInView={whileInView}
+      transition={{ duration: 0.5, delay: 0.25, ease: "easeInOut" }}
     >
       {children}
-    </motion.div>
+    </motion.section>
+  );
+}
+
+export const DefaultSectionDark =({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
+
+  return (
+    <motion.section
+      className="bg-black text-white uppercase h-[70vh] flex flex-col justify-between text-sm"
+    >
+      {children}
+    </motion.section>
   );
 }

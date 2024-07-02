@@ -1,12 +1,9 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import ProgressBar from "../atoms/ProgressBar";
-import Header from "../organisms/Header";
 import Hero from "../organisms/Hero";
 import About from "../organisms/About";
 import Experience from "../organisms/Experience";
 import Projects from "../organisms/Projects";
-import Lenis from "lenis";
 import Footer from "../organisms/Footer";
 import OtherProjects from "../organisms/OtherProjects";
 import { AnimatePresence, useScroll } from "framer-motion";
@@ -16,23 +13,13 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time: any) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    async () => {
+    (async () => {
       setTimeout(() => {
         setIsLoading(false);
         document.body.style.cursor = "default";
         window.scrollTo(0, 0);
-      }, 2000);
-    };
-
-    //should probably add a cleanup here
+      }, 2500);
+    })();
   }, []);
 
   const container = useRef(null);
@@ -43,11 +30,10 @@ export default function Home() {
 
   return (
     <>
-      {/* <ProgressBar /> */}
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <div ref={container} className="relative -z-20 bg-black md:h-[200vh]">
+      <div ref={container} className="relative -z-10 bg-black md:h-[200vh]">
         <Hero scrollYProgress={scrollYProgress} />
         <About scrollYProgress={scrollYProgress} />
       </div>

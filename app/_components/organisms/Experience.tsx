@@ -1,15 +1,17 @@
 import AnchorButton from "../atoms/AnchorButton/AnchorButton";
-import DefaultSection from "../atoms/DefaultSection";
+import {DefaultSection} from "../atoms/DefaultSection";
 import Heading from "../atoms/Text/Heading";
 import Position from "../molecules/Position";
 
 const positions = [
   {
-    position: "Content Creator",
+    position: "Creative Content Creator",
     company: "Nutmeg Books",
     from: "Jan 2024",
     to: "Present (Part-Time)",
-    desc: "Testing...",
+    desc: `Spearheaded creative social media content initiatives for book launch campaigns: Voyage to the Great Indies (translated by Serge Jardin) and The Princess of Malacca.
+    Designed and curated cohesive visual themes for Instagram and Facebook posts, from pre-sale promotions to book launch announcements with Canva and Adobe Illustrator. 
+    Produce video content for Instagram and Facebook Reels that showcased the essence of each book in a dynamic and immersive manner with Capcut, optimising for maximum reach and engagement. Videos achieved a peak viewership of over 17k views.`,
   },
   {
     position: "Front-End Developer Intern",
@@ -38,7 +40,7 @@ export default function Experience() {
   return (
     <DefaultSection id="Experience">
       <Heading text={"Experience"} />
-      <div className="pb-8">
+      <div className="pb-8 md:pb-20">
         {positions.map((position, index) => {
           return (
             <Position
@@ -47,8 +49,9 @@ export default function Experience() {
               company={position.company}
               from={position.from}
               to={position.to}
-              desc={position.desc}
-            />
+            >
+              {position.desc}
+            </Position>
           );
         })}
       </div>

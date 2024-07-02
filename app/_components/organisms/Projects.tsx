@@ -1,4 +1,4 @@
-import DefaultSection from "../atoms/DefaultSection";
+import {DefaultSection} from "../atoms/DefaultSection";
 import Heading from "../atoms/Text/Heading";
 import ProjectGrid from "./ProjectGrid";
 
