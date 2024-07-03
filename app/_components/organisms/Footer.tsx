@@ -19,13 +19,12 @@ export default function Footer() {
             <p>Sarah De Witt 2024</p>
             <p>Made with ❤️ by Sarah De Witt</p>
           </div>
-          <div className="">
-            <Anchor link={"/"} text={"Email"} />
-            <Anchor link={"/"} text={"Github"} />
-            <Anchor link={"/"} text={"LinkedIn"} />
-            <Anchor link={"/"} text={"Behance"} />
-            <Anchor link={"/"} text={"Dribbble"} />
-            <Anchor link={"/"} text={"Medium"} />
+          <div>
+            <Anchor link={"https://github.com/sarahdewitt"} text={"Github"} />
+            <Anchor link={"https://www.linkedin.com/in/sarah-de-witt-926b741a3/"} text={"LinkedIn"} />
+            <Anchor link={"https://www.behance.net/sarahejdewitt"} text={"Behance"} />
+            <Anchor link={"https://dribbble.com/sarahdewitt"} text={"Dribbble"} />
+            <Anchor link={"https://sarahejdewitt.medium.com/"} text={"Medium"} />
           </div>
         </div>
       </div>

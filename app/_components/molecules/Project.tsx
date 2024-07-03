@@ -29,7 +29,7 @@ export default function Project({ name, desc, badges = [] }: ProjectProps) {
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="flex w-full items-center justify-between">
-          <span className="text-left text-lg transition-all duration-300 ease-in-out md:text-xl lg:text-3xl">
+          <span className="text-left text-lg transition-all duration-300 ease-in-out w-5/6 md:w-full md:text-xl lg:text-3xl">
             {name}
           </span>
         </div>
@@ -60,7 +60,7 @@ export default function Project({ name, desc, badges = [] }: ProjectProps) {
             className={"text-base font-medium lg:text-xl"}
           >
             <div className="pt-5">
-              <p className="w-5/6">{desc}</p>
+              <p className="w-full md:w-5/6">{desc}</p>
               {badges.length > 0 && (
                 <span className="flex flex-wrap py-4">
                   {badges.map((badge, index) => (

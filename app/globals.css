@@ -70,3 +70,7 @@ body {
   pointer-events: none;
   margin: auto;
 }
+
+.qiqi{
+  cursor: url(/images/qiqi.png) 15 15, default;
+}

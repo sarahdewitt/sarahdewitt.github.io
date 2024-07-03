@@ -15,7 +15,7 @@ export const Title = () => {
     },
   };
   return (
-    <div className="block overflow-hidden py-20 lg:hidden">
+    <div className="block overflow-hidden py-20 md:hidden">
       <motion.div className="font-montreal text-[10vw] uppercase leading-none text-black">
         <h1 className="flex flex-col px-4">
           <span className="flex items-center gap-1">

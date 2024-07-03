@@ -7,6 +7,7 @@ export default function Anchor({ link, text }: { link: string; text: string }) {
       <Link
         href={`${link}`}
         className={"hover:text-gray cursor-pointer transition-all ease-in"}
+        target="_blank"
       >
         {text}
       </Link>

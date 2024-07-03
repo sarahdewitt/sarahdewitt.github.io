@@ -35,7 +35,7 @@ export default function Preloader() {
           variants={opacity}
           initial="initial"
           animate="enter"
-          className="absolute z-[1] flex items-center font-mondwest text-[10vw] md:text-5xl uppercase text-white leading-none text-center"
+          className="absolute z-[1] flex items-center font-mondwest text-[10vw] md:text-[5vw] lg:text-5xl uppercase text-white leading-none text-center"
         >
           Bribing the servers... One moment! &#x2697;
         </motion.p>

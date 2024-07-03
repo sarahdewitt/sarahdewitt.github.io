@@ -8,14 +8,14 @@ export default function About({ scrollYProgress }: any) {
 
   const isDesktop = typeof window !== "undefined" && window.innerWidth > 1024;
 
-  const style = isDesktop ?  { scale, rotate } : { scale: 1, rotate: 0 };
+  const style = isDesktop ? { scale, rotate } : { scale: 1, rotate: 0 };
 
-  const initial = isDesktop ? { opacity: 0, y: 100 } : {};
-  const whileInView = isDesktop ? { opacity: 1, y: 50 } : {};
+  const initial = isDesktop ? { opacity: 0, y: 50 } : {};
+  const whileInView = isDesktop ? { opacity: 1, y: 0 } : {};
 
   return (
     <motion.div
-      className="z-50 bg-white px-7 pt-20 md:h-[100vh] lg:pt-28"
+      className="z-50 bg-white px-7 py-20 md:h-[100vh] lg:py-28"
       id={"About"}
       style={style}
     >
@@ -34,10 +34,14 @@ export default function About({ scrollYProgress }: any) {
             beautiful and engaging web-based applications to life.
           </Paragraph>
           <Paragraph>
-            When I’m not coding, I enjoy decorating my Serenitea Pot on Genshin
-            Impact, crafting scarily specific Spotify playlists for every
-            situation, and strumming on my guitar.
+            When I’m not coding, I enjoy decorating my{" "}
+            <span className="lg:cursor-[url(/images/qiqi.png),_default]">
+              Serenitea Pot on Genshin Impact
+            </span>
+            , crafting scarily specific Spotify playlists for every situation,
+            and strumming on my guitar.
           </Paragraph>
+          <img src="images/self.jpg" alt="" />
         </div>
       </motion.div>
     </motion.div>

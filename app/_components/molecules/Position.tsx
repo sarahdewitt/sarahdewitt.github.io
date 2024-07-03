@@ -36,7 +36,7 @@ export default function Test({
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="flex w-full items-center justify-between">
-          <span className="text-left text-lg font-medium transition-all duration-300 ease-in-out md:text-xl lg:text-2xl">
+          <span className="text-left text-lg font-medium transition-all duration-300 ease-in-out w-5/6 md:w-full md:text-xl lg:text-2xl">
             {position} / {company}
           </span>
         </div>
@@ -66,7 +66,7 @@ export default function Test({
             }}
             className={"text-base font-medium lg:text-xl"}
           >
-            <div className="w-5/6 pt-5">
+            <div className="w-full md:w-5/6 pt-5">
               <p className="pb-3">
                 {from} — {to}
               </p>
