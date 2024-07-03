@@ -9,7 +9,8 @@ export default function AnchorButton({ link, text }: AnchorButtonProps) {
   return (
     <Link
       href={`${link}`}
-      className="flex w-3/4 md:w-1/4 items-center justify-between rounded-full border border-black px-5 py-5 text-xs font-medium uppercase text-black transition-colors duration-150 ease-in hover:bg-black hover:text-white lg:text-base"
+      className="flex w-3/4 items-center justify-between rounded-full border border-black px-5 py-5 text-xs font-medium uppercase text-black transition-colors duration-150 ease-in hover:bg-black hover:text-white md:w-1/4 lg:text-base"
+      target="_blank"
     >
       <p>{text}</p>
       <svg

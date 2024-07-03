@@ -13,7 +13,7 @@ interface PositionProps {
   company: string;
   from: string;
   to: string;
-  children: string;
+  children: any;
 }
 
 export default function Test({

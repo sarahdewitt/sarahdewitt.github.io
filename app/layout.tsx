@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Suspense } from "react";
 import SmoothScroll from "./_components/atoms/SmoothScroll";
 
 export const metadata: Metadata = {
@@ -13,6 +12,9 @@ export const metadata: Metadata = {
       "Sarah De Witt is a design-oriented Front-End Developer speacializing in creating visually appealing interfaces and engaging user experiences.",
     url: "https://sarahdewitt.github.io/",
   },
+  icons:{
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({
