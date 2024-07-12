@@ -12,14 +12,14 @@ export default function ProjectGrid() {
             alt={"Nutmeg Books"}
             href={"https://www.nutmegpublishing.com"}
           />
-        </div>
+        </div>  
         <div>
           <ProjectImage
-            name={"Star Wars Wiki"}
-            desc={"SWAPI / Next.js / TailwindCSS / Framer Motion"}
-            src={"/images/star-wars-wiki.jpg"}
-            alt={"Star Wars Wiki"}
-            href={"https://star-wars-wiki-pi.vercel.app"}
+            name={"Coinodoro"}
+            desc={"Next.js / TailwindCSS / Local Storage"}
+            src={"/images/coinodoro.jpg"}
+            alt={"Coinodoro"}
+            href={"https://github.com/sarahdewitt/coinodoro"}
           />
         </div>
         <div>
@@ -33,11 +33,11 @@ export default function ProjectGrid() {
         </div>
         <div>
           <ProjectImage
-            name={"Personal Portfolio V1"}
-            desc={"HTML / CSS / JavaScript."}
-            src={"/images/personal-portfolio.jpg"}
-            alt={"Personal Portfolio V1"}
-            href={"https://sarah-portfolio-v1.vercel.app/"}
+            name={"Star Wars Wiki"}
+            desc={"SWAPI / Next.js / TailwindCSS / Framer Motion"}
+            src={"/images/star-wars-wiki.jpg"}
+            alt={"Star Wars Wiki"}
+            href={"https://star-wars-wiki-pi.vercel.app"}
           />
         </div>
       </div>
