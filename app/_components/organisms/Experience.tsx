@@ -7,8 +7,8 @@ const positions = [
   {
     position: "Creative Content Creator",
     company: "Nutmeg Books",
-    from: "Jan 2024",
-    to: "Present (Part-Time)",
+    from: "Feb 2024",
+    to: "July 2024",
     desc: [
       "Spearheaded creative social media content initiatives for book launch campaigns: Voyage to the Great Indies (translated by Serge Jardin) and The Princess of Malacca.",
       "Designed and curated cohesive visual themes for Instagram and Facebook posts, from pre-sale promotions to book launch announcements with Canva and Adobe Illustrator.",
