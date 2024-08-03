@@ -64,6 +64,7 @@ export default function Project({ name, desc, link }: ProjectProps) {
               <p className="w-full pb-3 md:w-5/6">{desc}</p>
               <Link
                 href={link}
+                target="_blank"
                 className="flex w-fit cursor-pointer items-center gap-2 text-base uppercase transition-all ease-in hover:text-light-gray"
               >
                 See More

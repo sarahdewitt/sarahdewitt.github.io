@@ -21,9 +21,9 @@ export default function ProjectImage({
   href,
 }: ProjectImageProps) {
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
       <Picture src={`${src}`} alt={`${alt}`} />
-      <p className="flex flex-col pt-6 text-base tracking-normal text-black lg:w-3/4 lg:text-lg">
+      <p className="flex flex-col pt-6 text-base tracking-normal text-black lg:text-lg">
         <span>{name}</span>
         <span className="text-light-gray leading-snug">{desc}</span>
       </p>

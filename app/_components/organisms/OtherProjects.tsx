@@ -7,7 +7,7 @@ const projects = [
   {
     name: "Personal Portfolio V1",
     desc: "My first portfolio wesbite I ever made with HTML, CSS and JavaScript.",
-    link: "https://sarah-portfolio-v1.vercel.app/"
+    link: "https://github.com/sarahdewitt/sarah-portfolio-v1"
   },
   {
     name: "Pickup App - UI/UX",

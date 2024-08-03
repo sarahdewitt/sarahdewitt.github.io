@@ -6,7 +6,7 @@ export default function ProjectGrid() {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div>
           <ProjectImage
-            name={"Nutmeg Books"}
+            name={"Nutmeg Books (2021)"}
             desc={"HTML / Sass / JavaScript"}
             src={"/images/nutmeg-books.jpg"}
             alt={"Nutmeg Books"}
@@ -15,7 +15,7 @@ export default function ProjectGrid() {
         </div>  
         <div>
           <ProjectImage
-            name={"Coinodoro"}
+            name={"Coinodoro (2024)"}
             desc={"Next.js / TailwindCSS / Local Storage"}
             src={"/images/coinodoro.jpg"}
             alt={"Coinodoro"}
@@ -24,20 +24,20 @@ export default function ProjectGrid() {
         </div>
         <div>
           <ProjectImage
-            name={"Simple Portfolio Template"}
+            name={"Simple Portfolio Template (2024)"}
             desc={"Next.js / TailwindCSS / Framer Motion"}
             src={"/images/portfolio-template.jpg"}
             alt={"Simple Portfolio Template"}
-            href={"https://portfolio-template-opal-zeta.vercel.app/"}
+            href={"https://github.com/sarahdewitt/portfolio-template"}
           />
         </div>
         <div>
           <ProjectImage
-            name={"Star Wars Wiki"}
+            name={"Star Wars Wiki (2024)"}
             desc={"SWAPI / Next.js / TailwindCSS / Framer Motion"}
             src={"/images/star-wars-wiki.jpg"}
             alt={"Star Wars Wiki"}
-            href={"https://star-wars-wiki-pi.vercel.app"}
+            href={"https://github.com/sarahdewitt/star-wars-wiki"}
           />
         </div>
       </div>
